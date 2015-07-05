@@ -1,0 +1,33 @@
+# Tested on Mac OS X 10.9 using clang compiler provided by XCode
+package:
+    name: caffe
+    version: 0.999999
+
+source:
+    fn: caffe-rc2.tar.gz
+    url: https://github.com/BVLC/caffe/archive/rc2.tar.gz
+
+build:
+    number: 0
+
+requirements:
+    build:
+        - cmake
+        - numpy
+        - opencv
+        - boost
+        - libprotobuf
+        - python
+    run:
+        - python
+        - numpy
+        - opencv
+        - boost
+        - libprotobuf
+test:
+    imports:
+      - caffe
+
+about:
+    home: http://caffe.berkeleyvision.org/
+    license: BSD
