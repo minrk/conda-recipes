@@ -1,7 +1,7 @@
 # Tested on Mac OS X 10.9 using clang compiler provided by XCode
 package:
     name: caffe
-    version: 0.999999
+    version: rc2
 
 source:
     fn: caffe-rc2.tar.gz
@@ -17,11 +17,13 @@ requirements:
         - opencv
         - boost
         - libprotobuf
+        - hdf5
         - python
     run:
         - python
         - numpy
         - opencv
+        - hdf5
         - boost
         - libprotobuf
 test:
